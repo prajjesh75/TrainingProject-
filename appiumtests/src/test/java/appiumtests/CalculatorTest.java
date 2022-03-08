@@ -34,16 +34,16 @@ public class CalculatorTest {
 		
 		System.out.println("Inside opencalc..."); 
 		cap.setCapability("deviceName", "Google Nexus 4");
-		cap.setCapability("udid", "192.168.226.101:5555");
+		cap.setCapability("udid", "192.168.32.101:5555");
 		cap.setCapability("platformName", "Android");
 		cap.setCapability("platformVersion", "4.4.4");
 		cap.setCapability("automationName", "UiAutomator1");
 				
 		cap.setCapability("appPackage", "com.android.calculator2");
 		cap.setCapability("appActivity", "com.android.calculator2.Calculator");
-		
+		Thread.sleep(5000);
 		URL url = new URL("http://127.0.0.1:4723/wd/hub");
-		
+		Thread.sleep(5000);
 		//Object driver = new AppiumDriver(url, cap);
 		//AndroidDriver<WebElement> driver = new AndroidDriver<WebElement>(url, cap);
 		
